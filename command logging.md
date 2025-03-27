@@ -4,7 +4,7 @@
 `export PROMPT_COMMAND='last_command=$(fc -ln -1);/usr/local/bin/commandlogger.sh $last_command`
 
 ##The commandlogger script:
-`
+```
 #!/bin/bash
 
 LOGFILE="/var/log/user_commands.log"
@@ -25,4 +25,4 @@ if [ -n "$CMD" ]; then
   echo "$DATE $USER $HOST \"$CMD\"" >> $LOGFILE
   exho "" >> $LOGFILE
 fi
-`
+```
