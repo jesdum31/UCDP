@@ -1,7 +1,7 @@
 # All code for logging user commands with a service
 
 ## The service file:
-`´´
+```
 [Unit]
 Description=Logs user commands
 After=network.target
