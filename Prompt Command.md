@@ -1,4 +1,4 @@
-# All code for logging user commands
+# All code for logging user commands with prompt command
 
 ## The PROMPT_COMMAND line:
 `export PROMPT_COMMAND='last_command=$(fc -ln -1);/usr/local/bin/commandlogger.sh $last_command`
