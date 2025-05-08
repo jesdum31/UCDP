@@ -71,11 +71,3 @@
 - For example, to include only SSH logs:
     > sudo logwatch --service sshd --range today --detail High
     !["logwatch result when somebody entered the wrong password over ssh"](./images/logwatch%20wrong%20ssh%20password.png)
-
-4. rsyslog vs. logwatch: What's the Difference?
-!["The difference between rsyslog and logwatch"](./images/rsyslog%20vs%20logwatch.png)
-
-5. When to Use Each Tool
-- rsyslog: real-time logging, remote logging, and detailed log management.
-- logwatch: daily summaries of log activity without manually reading logs.
-- Combine both for a complete logging solution: rsyslog collects logs, while logwatch provides easy-to-read reports.
