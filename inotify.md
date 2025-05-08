@@ -2,14 +2,15 @@
 - Inotify is a Linux kernel subsystem that allows you to monitor file and directory changes in real-time. It is more lightweight and better for real-time monitoring than auditd.
 ## 1. Install inotify-tools
 - If not already installed, install inotify-tools (Debian-based systems like Ubuntu):
-    > sudo apt update
+  
+    `sudo apt update`
 
-    > sudo apt install inotify-tools -y
+    `sudo apt install inotify-tools -y`
 
 ## 2. Monitor File Changes in Real-Time
 - Example: Monitor a Specific File (/etc/passwd)
 
-    > inotifywait -m /etc/passwd
+    `inotifywait -m /etc/passwd`
     - -m: monitor contiuously
 
 ## 3. Automate File Change Alerts
@@ -26,10 +27,13 @@ done
 ```
 
 - Save this script as monitor.sh, then run it:
-    > bash monitor.sh
+  
+    `bash monitor.sh`
 
 ## 4. Use inotifywatch for Summary Reports
 - If you don’t need real-time monitoring but want a summary of file changes, use:
-    > inotifywatch -t 10 -r /etc/passwd
+  
+    `inotifywatch -t 10 -r /etc/passwd`
+  
 - This watches /var/www/ for 10 seconds and then reports changes.
 
